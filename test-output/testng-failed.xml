@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Propine_Date_Parser_V1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="parser.Utilities.Reporting"/>
+    <listener class-name="parser.Utilities.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Date_Parser(failed)">
+    <parameter name="browser" value="chorme"/>
+    <classes>
+      <class name="parser.TestCases.ParseDate">
+        <methods>
+          <include name="ParserDD" invocation-numbers="0 2 6 8 12 14 15 16 17 18 19 20 21 22 23 24"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- parser.TestCases.ParseDate -->
+    </classes>
+  </test> <!-- Date_Parser(failed) -->
+</suite> <!-- Failed suite [Propine_Date_Parser_V1] -->

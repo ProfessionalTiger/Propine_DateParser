@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite  SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Propine_Date_Parser_V1">
+
+<listeners>
+<listener class-name="parser.Utilities.Reporting"/>
+<listener class-name="parser.Utilities.Listener"/>
+</listeners>
+		<test name= "Date_Parser">			
+			<parameter name="browser" value="chorme"/>
+				<classes>
+					<class name="parser.TestCases.ParseDate"/>
+				</classes>
+	</test>
+</suite>
